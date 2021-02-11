@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Xmeme</title>
+    </head>
+    <body>
+        <div class="pos-f-t">
+            <nav class="navbar navbar-dark bg-dark">
+                <p class="alert btn-danger mt-2 px-5" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">Welcome to Xmeme</p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M1.513 1.96a1.374 1.374 0 011.499-.21l19.335 9.215a1.146 1.146 0 010 2.07L3.012 22.25a1.374 1.374 0 01-1.947-1.46L2.49 12 1.065 3.21a1.374 1.374 0 01.448-1.25zm2.375 10.79l-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 010 1.5H3.888z"></path></svg>
+                    <p>Click Here to Upload Meme</p>
+                </button>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+
+                    <form>
+                        <div class="form-group row">
+                            <label for="ownerName" class="col-sm-2 col-form-label text-white"><span class="badge badge-pill badge-success">Meme Owner</span></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ownerName" placeholder="Your Name..." required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="memeCaption" class="col-sm-2 col-form-label"><span class="badge badge-pill badge-success">Caption</span></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="memeCaption" placeholder="Meme Caption..." required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="memeUrl" class="col-sm-2 col-form-label"><span class="badge badge-pill badge-success">Meme URL</span></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="memeUrl" placeholder="https://&lt;link-to-image&gt;" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <div class="col-sm-12 ";">
+                                <button type="submit" class="alert btn-primary" style="float: left;">Submit Meme</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
