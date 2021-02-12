@@ -12,11 +12,14 @@
     <body class="bg-warning">
         <div class="pos-f-t">
             <nav class="navbar navbar-dark bg-dark">
-                <p class="alert btn-danger mt-2 px-5" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">Welcome to Xmeme</p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <p><h1 class="alert btn-danger my-auto px-auto" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">Welcome to Xmeme</h1></p>
+                
+                <button class="navbar-toggler my-auto px-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M1.513 1.96a1.374 1.374 0 011.499-.21l19.335 9.215a1.146 1.146 0 010 2.07L3.012 22.25a1.374 1.374 0 01-1.947-1.46L2.49 12 1.065 3.21a1.374 1.374 0 01.448-1.25zm2.375 10.79l-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 010 1.5H3.888z"></path></svg>
-                    <p>Click Here to Upload Meme</p>
+                    <h4>Click Here to Upload Meme</h4>
                 </button>
+            
             </nav>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4">
@@ -50,14 +53,22 @@
                 </div>
             </div>
         </div>
-        <div class="container col-11 bg-dark" id="imageDisplay"></div>
+        <div class="container col-11 bg-dark mx-auto" id="imageDisplay"><br></div>
+        <footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.644)">
+    © 2021 Copyright:
+    <a class="text-light" href="https://www.linkedin.com/in/nikhildr22/">Nikhil D R</a>
+  </div>
+  <!-- Copyright -->
+</footer>
     </body>
     <script>
         let memeWindow = document.getElementById("imageDisplay");
          fetch("http://localhost:5000/memes").then((response)=>response.json())
         .then((data)=>{
             for(let i of data){
-                imageCard = `<div class="card col-12 pt-3 m-3 border border-primary" >
+                imageCard = `<div class="card col col-sm-12 col-lg-8 pt-3 my-4 border border-primary mx-auto" >
   <div class="card-body">
     <h5 class="card-title">${i.name}</h5>
     <p class="card-text border border-dark">${i.caption}</p>
@@ -66,6 +77,7 @@
 </div>`
     memeWindow.innerHTML += imageCard;
             }
+            memeWindow.innerHTML += `<br>`;
         })
     </script>
     <script>
